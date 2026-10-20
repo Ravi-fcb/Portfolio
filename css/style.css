@@ -62,3 +62,112 @@
         transform: none;
     }
 }
+
+
+/* Certifications section */
+.certification-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100%;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 100% 0, rgba(240, 68, 82, 0.075), transparent 55%),
+        rgba(17, 17, 20, 0.78);
+}
+
+.certification-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--red), transparent 85%);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.certification-card .skill-symbol {
+    flex: 0 0 auto;
+}
+
+.certification-issuer {
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+    color: var(--red) !important;
+    font-size: 9px !important;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.5 !important;
+}
+
+.certification-card h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    letter-spacing: -0.025em;
+    overflow-wrap: anywhere;
+}
+
+.certification-card p:not(.certification-issuer) {
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.certification-card .certification-link-note {
+    margin-top: auto;
+    padding-top: 18px;
+    color: var(--dim);
+    font-size: 10px !important;
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(240, 68, 82, 0.42);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 780px) {
+    .certification-card h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .certification-card {
+        min-height: auto;
+    }
+
+    .certification-card .certification-link-note {
+        padding-top: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .certification-card,
+    .certification-card:hover {
+        transition: none;
+        transform: none;
+    }
+}
+.view-certification {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 14px;
+  color: #ff5b64;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.view-certification:hover {
+  color: #ffffff;
+  gap: 12px;
+}
+
+.view-certification span {
+  font-size: 1.1rem;
+}
