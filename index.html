@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090b" />
+  <meta name="description" content="Ravi Kiran Badipati — Computer Science student building full-stack applications, backend systems, and applied AI projects." />
+  <meta property="og:title" content="Ravi Kiran Badipati | Developer Portfolio" />
+  <meta property="og:description" content="Explore projects in full-stack development, backend engineering, and AI/ML." />
+  <meta property="og:type" content="website" />
+  <title>Ravi Kiran Badipati | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2309090b'/><text x='50' y='62' text-anchor='middle' font-size='37' font-family='Arial' fill='%23f04452' font-weight='700'>RK</text></svg>" />
+</head>
+<body>
+  <canvas id="scene3d" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ravi Kiran home"><span class="brand-mark">RK</span><span>Ravi Kiran<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero page-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Computer Science · AI &amp; ML</p>
+        <h1>Building useful software,<br />with <span class="accent-text">intelligent ideas.</span></h1>
+        <p class="hero-description">I'm Ravi Kiran Badipati, a CSE student at SRM University AP. I build full-stack applications, backend systems, and practical AI/ML projects that solve real problems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/ravi-kiran-badipati-b21101291/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-socials"><a href="https://github.com/Ravi-fcb" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/ravi-kiran-badipati-b21101291/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://leetcode.com/u/ravi_kiran7" target="_blank" rel="noopener noreferrer">LeetCode <span>↗</span></a><a href="https://www.instagram.com/ravi_kiran710/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a><span class="social-divider"></span><span class="open-to">Open to internship opportunities</span></div>
+      </div>
+      <div class="hero-art" id="heroArt">
+        <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+        <div class="orbit-node node-one"></div><div class="orbit-node node-two"></div><div class="orbit-node node-three"></div>
+        <div class="portrait-tilt" id="portraitTilt">
+          <div class="portrait-frame"><img src="Ravi Kiran Image.jpg" alt="Portrait of Ravi Kiran Badipati" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><div class="portrait-fallback">RK</div><div class="portrait-shine"></div></div>
+        </div>
+        <div class="floating-chip chip-code"><span class="chip-icon">&lt;/&gt;</span><span><strong>Build</strong><small>with purpose</small></span></div>
+        <div class="floating-chip chip-ai"><span class="chip-icon">✳</span><span><strong>AI + Web</strong><small>one toolkit</small></span></div>
+        <div class="hero-art-caption"><span class="caption-line"></span><span>Curious mind. Practical builder.</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-wheel"></span> Scroll to explore</a>
+    </section>
+
+    <section class="section page-wrap" id="about">
+      <div class="section-heading"><p class="section-kicker">01 / A LITTLE ABOUT ME</p><h2>Curiosity turns into<br /><span class="muted-heading">things people can use.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-copy glass-panel"><p class="lead-copy">I enjoy working where thoughtful engineering meets useful ideas.</p><p>From designing APIs and database models to experimenting with computer vision and NLP, I like understanding how the whole product fits together—not just one screen or feature.</p><p>I'm currently strengthening my software engineering fundamentals while building projects that help me learn through implementation.</p><a class="text-link" href="#projects">See what I've been building <span>↗</span></a></div>
+        <div class="about-facts"><article class="fact-card"><span class="fact-number">01</span><div><h3>Product-minded</h3><p>I consider the user workflow, edge cases, and maintainability alongside the code.</p></div></article><article class="fact-card"><span class="fact-number">02</span><div><h3>Full-stack curious</h3><p>I like connecting interfaces, APIs, data models, and authentication into a complete flow.</p></div></article><article class="fact-card"><span class="fact-number">03</span><div><h3>Always learning</h3><p>Each project is a chance to improve my problem-solving and engineering habits.</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="section page-wrap" id="projects">
+      <div class="section-heading heading-row"><div><p class="section-kicker">02 / SELECTED PROJECTS</p><h2>Work that shows<br /><span class="muted-heading">how I think.</span></h2></div><a class="text-link all-projects" href="https://github.com/Ravi-fcb?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <span>↗</span></a></div>
+      <div class="project-grid">
+        <article class="project-card project-featured tilt-card"><div class="project-visual visual-contract"><div class="visual-window"><div class="window-top"><i></i><i></i><i></i><span>contract-flow</span></div><div class="mock-dashboard"><div class="mock-sidebar"><b></b><b></b><b></b><b></b></div><div class="mock-main"><div class="mock-title"></div><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-table"><b></b><b></b><b></b><b></b></div></div></div></div><span class="visual-label">FULL-STACK PLATFORM</span></div><div class="project-content"><div class="project-meta"><span class="project-index">01</span><span class="project-type">MERN · PRODUCT WORKFLOW</span></div><h3>Smart Contract Lifecycle Management</h3><p>A full-stack platform concept for organizing contract workflows, approvals, and lifecycle status across user roles.</p><ul class="project-highlights"><li>JWT authentication and role-based access</li><li>REST API and MongoDB integration</li><li>Contract status and dashboard workflows</li></ul><div class="tech-list"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div><a class="project-link" href="https://github.com/Ravi-fcb/smart-contract-lifecycle" target="_blank" rel="noopener noreferrer">Explore repository <span>↗</span></a></div></article>
+        <article class="project-card tilt-card"><div class="project-visual visual-graph"><div class="graph-canvas"><svg viewBox="0 0 360 190" role="img" aria-label="Abstract requirement dependency graph"><g stroke="rgba(255,255,255,.25)" stroke-width="1.5"><path d="M65 95 L135 45 L213 74 L292 35 M65 95 L135 145 L213 115 L292 155 M135 45 L135 145 M213 74 L213 115 M213 74 L292 155" fill="none"/></g><g fill="#f04452"><circle cx="65" cy="95" r="12"/><circle cx="135" cy="45" r="9"/><circle cx="213" cy="74" r="11"/><circle cx="292" cy="35" r="8"/><circle cx="135" cy="145" r="8"/><circle cx="213" cy="115" r="9"/><circle cx="292" cy="155" r="11"/></g><g fill="#f6f6f7" font-size="8" font-family="sans-serif"><text x="37" y="119">REQ-01</text><text x="111" y="29">REQ-02</text><text x="189" y="56">REQ-03</text><text x="269" y="20">REQ-04</text><text x="110" y="166">REQ-05</text><text x="189" y="136">REQ-06</text><text x="270" y="177">REQ-07</text></g></svg></div><span class="visual-label">NLP · DEPENDENCY GRAPH</span></div><div class="project-content"><div class="project-meta"><span class="project-index">02</span><span class="project-type">SOFTWARE ENGINEERING</span></div><h3>Requirement Change Impact Analysis</h3><p>A requirements engineering tool designed to explore dependencies and surface potentially related requirements.</p><ul class="project-highlights"><li>Requirement similarity with TF-IDF and cosine similarity</li><li>Dependency graph visualization with NetworkX</li><li>Streamlit-based analysis interface</li></ul><div class="tech-list"><span>Python</span><span>Streamlit</span><span>NetworkX</span><span>scikit-learn</span></div><a class="project-link" href="https://github.com/Ravi-fcb/requirement-change-impact-analysis-tool" target="_blank" rel="noopener noreferrer">Explore repository <span>↗</span></a></div></article>
+        <article class="project-card tilt-card"><div class="project-visual visual-monitor"><div class="monitor-ui"><div class="monitor-head"><span>System Overview</span><span class="live-indicator">● LIVE UI CONCEPT</span></div><div class="monitor-metrics"><div><small>CPU</small><strong>↗</strong><div class="metric-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div><small>MEMORY</small><strong>▥</strong><div class="metric-bars bars-alt"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><div class="monitor-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="visual-label">SYSTEMS · VISUALIZATION</span></div><div class="project-content"><div class="project-meta"><span class="project-index">03</span><span class="project-type">BACKEND &amp; MONITORING</span></div><h3>System Resource Monitor</h3><p>A monitoring dashboard concept for presenting machine resource information through a web interface.</p><ul class="project-highlights"><li>Resource data collection with psutil</li><li>Flask application layer</li><li>Charts for at-a-glance monitoring</li></ul><div class="tech-list"><span>Python</span><span>Flask</span><span>psutil</span><span>Chart.js</span></div><a class="project-link" href="https://github.com/Ravi-fcb/System-Resource-Monitor" target="_blank" rel="noopener noreferrer">Explore repository <span>↗</span></a></div></article>
+        <article class="project-card tilt-card"><div class="project-visual visual-attendance"><div class="face-scan"><div class="scan-frame"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="scan-face">◉</div><div class="scan-line"></div></div><div class="scan-status"><i></i><span>Recognition workflow</span></div></div><span class="visual-label">COMPUTER VISION</span></div><div class="project-content"><div class="project-meta"><span class="project-index">04</span><span class="project-type">AUTOMATION</span></div><h3>Smart Attendance System</h3><p>A computer-vision project focused on face-based attendance workflows and recording attendance data.</p><ul class="project-highlights"><li>Face detection and recognition workflow</li><li>Attendance data management</li><li>Python-based computer vision</li></ul><div class="tech-list"><span>Python</span><span>OpenCV</span><span>Flask</span><span>MongoDB</span></div><a class="project-link" href="https://github.com/Ravi-fcb/smart_attendance_system" target="_blank" rel="noopener noreferrer">Explore repository <span>↗</span></a></div></article>
+      </div>
+      <p class="project-note">Project summaries describe intended capabilities. Check each repository for the current implementation and setup instructions.</p>
+    </section>
+
+    <section class="section page-wrap" id="skills">
+      <div class="section-heading"><p class="section-kicker">03 / TOOLKIT</p><h2>Technologies I use<br /><span class="muted-heading">to bring ideas to life.</span></h2></div>
+      <div class="skills-grid"><article class="skill-panel"><span class="skill-symbol">⌘</span><h3>Languages</h3><p>C · C++ · Python · Java · JavaScript</p></article><article class="skill-panel"><span class="skill-symbol">⌘</span><h3>Web development</h3><p>HTML · CSS · React · Node.js · Express · REST APIs · JWT · Flask</p></article><article class="skill-panel"><span class="skill-symbol">▤</span><h3>Data &amp; AI</h3><p>MySQL · MongoDB · scikit-learn · NumPy · Pandas · OpenCV · Machine Learning</p></article><article class="skill-panel"><span class="skill-symbol">⌁</span><h3>Tools &amp; engineering</h3><p>Git · GitHub · VS Code · Postman · DSA · OOP · DBMS</p></article><article class="skill-panel"><span class="skill-symbol">◇</span><h3>Enterprise platforms</h3><p>Salesforce Apex · Lightning Web Components · SAP ERP concepts · SAP S/4HANA</p></article><article class="skill-panel"><span class="skill-symbol">✳</span><h3>Currently exploring</h3><p>Generative AI · applied NLP · system design · reliable backend patterns</p></article></div>
+    </section>
+
+    <section class="section page-wrap" id="experience">
+      <div class="section-heading"><p class="section-kicker">04 / JOURNEY SO FAR</p><h2>Learning by doing.<br /><span class="muted-heading">Growing with every build.</span></h2></div>
+      <div class="journey-grid"><div class="journey-line"><article class="journey-item"><span class="journey-dot"></span><div class="journey-date">MAY 2025 — JUL 2025 · VIRTUAL</div><h3>Salesforce Developer Intern</h3><p class="journey-org">SmartBridge · Salesforce Partner</p><p>Worked with Salesforce fundamentals, Apex, Lightning Web Components, object relationships, and Trailhead learning modules.</p></article><article class="journey-item"><span class="journey-dot"></span><div class="journey-date">2023 — PRESENT</div><h3>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)</h3><p class="journey-org">SRM University AP</p><p>Building foundations in data structures, object-oriented programming, databases, machine learning, and software development.</p></article></div><aside class="education-card"><span class="education-icon">✳</span><p class="section-kicker">BEYOND THE CLASSROOM</p><h3>Learning through projects</h3><p>I use hands-on projects to connect course concepts with practical implementation, from web APIs and database design to applied machine learning.</p><a class="text-link" href="https://github.com/Ravi-fcb" target="_blank" rel="noopener noreferrer">Browse my GitHub <span>↗</span></a></aside></div>
+      <p class="verification-note">Add verified certification details and your latest CGPA here when ready. I have left them out rather than publish unverified credentials or numbers.</p>
+    </section>
+
+    <section class="contact-section page-wrap" id="contact"><div class="contact-panel"><div class="contact-copy"><p class="section-kicker">05 / GET IN TOUCH</p><h2>Have a role or<br /><span class="muted-heading">interesting problem?</span></h2><p>I'm open to discussing software engineering internships, projects, and opportunities to learn from a team.</p><div class="contact-direct"><a href="mailto:badipati.ravikiran@gmail.com">badipati.ravikiran@gmail.com <span>↗</span></a><a href="https://www.linkedin.com/in/ravi-kiran-badipati-b21101291/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://leetcode.com/u/ravi_kiran7" target="_blank" rel="noopener noreferrer">LeetCode · Problem solving <span>↗</span></a><a href="https://www.instagram.com/ravi_kiran710/" target="_blank" rel="noopener noreferrer">Instagram · Personal profile <span>↗</span></a></div></div><form class="contact-form" id="contactForm"><label for="contactName">Your name</label><input id="contactName" name="name" autocomplete="name" required placeholder="Jane Doe"/><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" autocomplete="email" required placeholder="jane@example.com"/><label for="contactMessage">Message</label><textarea id="contactMessage" name="message" rows="4" required placeholder="Tell me a little about the opportunity..."></textarea><button class="button button-primary" type="submit">Open email draft <span>↗</span></button><p class="form-note" id="formNote">This form opens your email app; it doesn't store messages on this website.</p></form></div></section>
+  </main>
+  <footer class="site-footer page-wrap"><a class="brand" href="#home"><span class="brand-mark">RK</span><span>Ravi Kiran<span class="brand-dot">.</span></span></a><p>Designed with care. Built to keep learning.</p><a href="#home" class="back-top">Back to top ↑</a><small>© <span id="year"></span> Ravi Kiran Badipati</small></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
