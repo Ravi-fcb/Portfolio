@@ -73,8 +73,18 @@
     const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
     const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
     $('#formNote').textContent = 'Opening your email app…';
-    window.location.href = `mailto:badipati.ravikiran@gmail.com?subject=${subject}&body=${body}`;
-  });
+const recipient = "badipati.ravikiran@gmail.com";
+
+const subject = encodeURIComponent("Portfolio Contact");
+const body = encodeURIComponent(message);
+
+const gmailURL =
+  `https://mail.google.com/mail/?view=cm&fs=1` +
+  `&to=${encodeURIComponent(recipient)}` +
+  `&su=${subject}` +
+  `&body=${body}`;
+
+window.open(gmailURL, "_blank", "noopener,noreferrer");  });
   $('#year').textContent = new Date().getFullYear();
 
   // Three.js background: a restrained particle field and rotating wireframe geometry.
