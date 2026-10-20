@@ -2,7 +2,7 @@
 
 A modern, interactive developer portfolio built to showcase my projects, technical skills, experience, and journey as a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning.
 
-🌐 **Live Portfolio:** [Add your deployed website URL here]
+🌐 **Live Portfolio:** https://portfolio-kappa-wheat-7cja3aejnq.vercel.app/
 
 ## ✨ Features
 
