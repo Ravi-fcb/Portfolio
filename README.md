@@ -108,4 +108,3 @@ This project is primarily intended to showcase my personal portfolio and develop
 
 ---
 
-⭐ If you find my work interesting, feel free to explore my repositories and connect with me!
